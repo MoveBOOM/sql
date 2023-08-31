@@ -8,11 +8,11 @@ INSERT INTO executor(name)
 		('Chris Brouwn');
 
 INSERT INTO genre_executor(genre, exec)
-	VALUES(11,17), (11,18),
-		(12,19), (12,20),
-		(13,24), (14,23),
-		(15,21), (15,22),
-		(13,23), (14,19);
+	VALUES(1,1), (1,2),
+		(2,3), (2,4),
+		(3,8), (4,7),
+		(5,5), (5,6),
+		(3,7), (4,3);
 
 INSERT INTO album(name, date)
 	VALUES('My Way',1969), ('What a Wonderful World',1967),
@@ -21,19 +21,19 @@ INSERT INTO album(name, date)
 		('Man of the Woods',2018), ('Indigo',2019);
 
 INSERT INTO executor_album(exec, album)
-	values(17,9), (18,10), (19,11), (20,12),
-		(21,13), (22,14), (23,15), (24,16);
+	values(1,1), (2,2), (3,3), (4,4),
+		(5,5), (6,6), (7,7), (8,8);
 
 INSERT INTO track(name, duration, album_id)
-	values('Watch What Happens', 141, 9), ('My Way', 277, 9),
-		('What a Wonderful World', 140, 10), ('Hello Brother', 212, 10),
-		('+100500', 348, 11), ('Любовь и страх', 320, 11),
-		('Killer', 195, 12), ('No Regrets', 201, 12),
-		('Back in Black', 256, 13), ('Rock and Rol Ain"t Noise Pollution', 256, 13),
-		('Burn it Down', 230, 14), ('Powerless', 225, 14),
-		('Supplies', 226, 15), ('Say Something', 279, 15),
-		('No Guidance', 261, 16), ('Dear God', 243, 16),
-		('Белый кит', 320, 11), ('Gnat', 225, 12);
+	values('Watch What Happens', 141, 1), ('My Way', 277, 1),
+		('What a Wonderful World', 140, 2), ('Hello Brother', 212, 2),
+		('+100500', 348, 3), ('Любовь и страх', 320, 3),
+		('Killer', 195, 4), ('No Regrets', 201, 4),
+		('Back in Black', 256, 5), ('Rock and Rol Ain"t Noise Pollution', 256, 5),
+		('Burn it Down', 230, 6), ('Powerless', 225, 6),
+		('Supplies', 226, 7), ('Say Something', 279, 7),
+		('No Guidance', 261, 8), ('Dear God', 243, 8),
+		('Белый кит', 320, 3), ('Gnat', 225, 4);
 
 INSERT INTO compilation(name, date)
 	values('Сборник1', 1970), ('Сборник2', 2014),
@@ -41,6 +41,6 @@ INSERT INTO compilation(name, date)
 		('Сборник5', 2019), ('Сборник6', 2020),
 		('Сборник7', 2020), ('Сборник8', 2020);
 
-INSERT INTO compilation_track(comp, track)
-	values(9,37), (9,39), (10,38), (10,40), (11,45), (11,47), (12,46), (12,48),
-		(13,49), (13,51), (14,50), (14,52), (15,41), (15,43), (16,42), (16,44);
+INSERT INTO track_collection(comp, track)
+	values(1,1), (1,3), (2,2), (2,4), (3,9), (3,11), (4,10), (4,12),
+		(5,13), (5,15), (6,14), (6,16), (7,5), (7,7), (8,6), (8,8);
